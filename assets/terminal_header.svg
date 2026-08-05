@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260" fill="none">
+  <style>
+    .bg { fill: #09090b; stroke: #27272a; stroke-width: 1px; rx: 8px; }
+    .top-bar { fill: #121215; stroke: #27272a; stroke-width: 1px; rx: 8px 8px 0 0; }
+    .dot-red { fill: #ff5f56; }
+    .dot-yellow { fill: #ffbd2e; }
+    .dot-green { fill: #27c93f; }
+    .bar-title { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #71717a; }
+    
+    .prompt { font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; font-weight: 700; fill: #00f0ff; }
+    .cmd { font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; fill: #ffffff; }
+    .ascii { font-family: 'Fira Code', 'Courier New', monospace; font-size: 11px; fill: #a855f7; white-space: pre; }
+    .label { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; font-weight: 700; fill: #00f0ff; }
+    .value { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #e4e4e7; }
+    .dim { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #71717a; }
+    
+    .cursor { fill: #00f0ff; animation: blink 1s infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+
+  <!-- Window Container -->
+  <rect width="798" height="258" x="1" y="1" class="bg" />
+  
+  <!-- Window Top Bar -->
+  <rect width="798" height="32" x="1" y="1" class="top-bar" />
+  <circle cx="20" cy="16" r="6" class="dot-red" />
+  <circle cx="38" cy="16" r="6" class="dot-yellow" />
+  <circle cx="56" cy="16" r="6" class="dot-green" />
+  <text x="400" y="21" text-anchor="middle" class="bar-title">jonatan@utn-arch-system:~ (zsh)</text>
+
+  <!-- Prompt Command line -->
+  <text x="20" y="60" class="prompt">jonatan@utn-system:~$</text>
+  <text x="180" y="60" class="cmd">neofetch --user JonatanRosassss --style y2k-stealth</text>
+  <rect x="585" y="47" width="8" height="15" class="cursor" />
+
+  <!-- Divider -->
+  <line x1="20" y1="75" x2="780" y2="75" stroke="#27272a" stroke-dasharray="4 4" />
+
+  <!-- Left ASCII Art (Vagabond Y2K Kanji / Signal) -->
+  <g transform="translate(25, 90)">
+    <text y="15" class="ascii">   /\_/\   </text>
+    <text y="30" class="ascii">  ( o.o )  </text>
+    <text y="45" class="ascii">   &gt; ^ &lt;   </text>
+    <text y="65" class="ascii"> [Y2K-INK] </text>
+    <text y="85" class="ascii">   ⚡ 440Hz </text>
+    <text y="105" class="ascii">   SHOEGAZE</text>
+    <text y="125" class="ascii">   =========</text>
+  </g>
+
+  <!-- Right System Information -->
+  <g transform="translate(180, 95)">
+    <text y="15" class="label">USER:<tspan class="value"> Jonatan Rosas (JonatanRosassss)</tspan></text>
+    <text y="35" class="label">HOST:<tspan class="value"> UTN Software Architecture &amp; Development</tspan></text>
+    <text y="55" class="label">STACK:<tspan class="value"> C++ • C# (.NET) • Python • JavaScript • SQL • HTML</tspan></text>
+    <text y="75" class="label">FOCUS:<tspan class="value"> System Architecture, Logic &amp; Async Algorithms</tspan></text>
+    <text y="95" class="label">VIBE:<tspan class="value"> Slowdive / Shoegaze Atmosphere (Low Noise)</tspan></text>
+    <text y="115" class="label">STATUS:<tspan class="value" fill="#00f0ff"> ● OPERATIONAL</tspan> <tspan class="dim">| Uptime: 24/7 Deep Work</tspan></text>
+  </g>
+</svg>

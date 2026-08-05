@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="120" viewBox="0 0 600 120" fill="none">
+  <style>
+    .bg { fill: #09090b; stroke: #27272a; stroke-width: 1px; rx: 8px; }
+    .title { font-family: 'Fira Code', 'Courier New', monospace; font-weight: 700; font-size: 14px; fill: #ffffff; }
+    .artist { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #a855f7; }
+    .album { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #71717a; }
+    .time { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #00f0ff; }
+    .bar-bg { fill: #18181b; rx: 2px; }
+    .bar-fill { fill: #00f0ff; rx: 2px; }
+    
+    .eq-bar { fill: #a855f7; transform-origin: bottom; animation: pulse 1.2s ease-in-out infinite alternate; }
+    .eq-1 { animation-delay: 0.1s; }
+    .eq-2 { animation-delay: 0.4s; }
+    .eq-3 { animation-delay: 0.2s; }
+    .eq-4 { animation-delay: 0.5s; }
+    .eq-5 { animation-delay: 0.3s; }
+    
+    @keyframes pulse {
+      0% { transform: scaleY(0.2); }
+      100% { transform: scaleY(1); }
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="598" height="118" x="1" y="1" class="bg" />
+
+  <!-- Album Art Box (Shoegaze Aesthetic) -->
+  <rect x="16" y="16" width="86" height="86" rx="6" fill="#121215" stroke="#27272a" />
+  <circle cx="59" cy="59" r="28" fill="#09090b" stroke="#a855f7" stroke-width="2" />
+  <circle cx="59" cy="59" r="8" fill="#00f0ff" />
+
+  <!-- Track Meta -->
+  <text x="118" y="40" class="title">Slowdive — Machine Gun</text>
+  <text x="118" y="58" class="artist">Souvlaki [Shoegaze / Ambient 440Hz]</text>
+  <text x="118" y="74" class="album">Status: Currently Playing on High Rotation</text>
+
+  <!-- Progress Bar -->
+  <rect x="118" y="86" width="380" height="4" class="bar-bg" />
+  <rect x="118" y="86" width="160" height="4" class="bar-fill" />
+  <circle cx="278" cy="88" r="4" fill="#ffffff" />
+  <text x="510" y="90" class="time">2:14 / 5:38</text>
+
+  <!-- Animated Equalizer Bars -->
+  <g transform="translate(535, 35)">
+    <rect class="eq-bar eq-1" x="0" y="0" width="4" height="30" rx="2" />
+    <rect class="eq-bar eq-2" x="8" y="0" width="4" height="30" rx="2" />
+    <rect class="eq-bar eq-3" x="16" y="0" width="4" height="30" rx="2" />
+    <rect class="eq-bar eq-4" x="24" y="0" width="4" height="30" rx="2" />
+    <rect class="eq-bar eq-5" x="32" y="0" width="4" height="30" rx="2" />
+  </g>
+</svg>
