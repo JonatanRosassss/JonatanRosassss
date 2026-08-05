@@ -2,7 +2,7 @@
 
   <!-- ANIMATED TYPING HEADER -->
   <a href="https://github.com/JonatanRosassss">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00F0FF&background=09090B00&center=true&vCenter=true&width=700&height=60&lines=SYSTEM_%2F%2F_JONATAN_ROSAS;DEVELOPER_%7C_C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS;SHOEGAZE_%2F%2F_SLOWDIVE_FREQUENCY;STEALTH_DARK_TERMINAL_DASHBOARD" alt="Typing Header" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=00F0FF&background=09090B00&center=true&vCenter=true&width=750&height=60&lines=SYSTEM_%2F%2F_JONATAN_ROSAS;Estudiante_de_programacion_y_desarrollo_de_software;Aprendiendo_en_UTN_FRGP_y_UNPILAR;DEVELOPER_%7C_C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS" alt="Typing Header" />
   </a>
 
   <br/><br/>
@@ -18,16 +18,16 @@
   <br/><br/>
 
   <p>
-    <img src="https://img.shields.io/badge/LANGUAGES-C%2B%2B%20%7C%20C%23%20%7C%20PYTHON%20%7C%20JS-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=00F0FF" alt="Languages" />
-    <img src="https://img.shields.io/badge/AESTHETIC-TERMINAL%20%7C%20STEALTH-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Aesthetic" />
-    <img src="https://img.shields.io/badge/VIBE-SLOWDIVE%20SHOEGAZE-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=FFFFFF" alt="Music" />
+    <img src="https://img.shields.io/badge/STUDENT-UTN%20FRGP%20%26%20UNPILAR-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=00F0FF" alt="Student" />
+    <img src="https://img.shields.io/badge/ROLE-SOFTWARE%20DEVELOPER-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Role" />
+    <img src="https://img.shields.io/badge/CORE-C%2B%2B%20%7C%20C%23%20%7C%20PYTHON%20%7C%20JS-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=FFFFFF" alt="Languages" />
   </p>
 
 </div>
 
 ---
 
-### `// 01 . PROYECTOS UNIVERSIDAD & SISTEMAS (UTN)`
+### `// 01 . PROYECTOS UNIVERSIDAD & SISTEMAS (UTN FRGP & UNPILAR)`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -39,7 +39,7 @@
     </td>
     <td width="50%" bgcolor="#121215" style="border: 1px solid #27272a; padding: 16px; border-radius: 6px;" valign="top">
       <h4><a href="https://github.com/JonatanRosassss/tp_final_prog3" style="color: #00f0ff; text-decoration: none;"><code>💻 tp_final_prog3</code></a></h4>
-      <p><small style="color: #a1a1aa;">Trabajo práctico final integrador para Programación 3 (UTN).</small></p>
+      <p><small style="color: #a1a1aa;">Trabajo práctico final integrador para Programación 3 (UTN FRGP).</small></p>
       <hr style="border: 0; border-top: 1px solid #27272a; margin: 10px 0;" />
       <code>ASP.NET</code> &nbsp;<code>C#</code>
     </td>
@@ -91,7 +91,7 @@
 
 <br/>
 
-### `// 03 . CONTENIDO & MATERIAS DE UNIVERSIDAD (UTN)`
+### `// 03 . CONTENIDO & MATERIAS DE UNIVERSIDAD (UTN FRGP & UNPILAR)`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -172,10 +172,10 @@
   ### `// AUDIO SIGNAL & CURRENT ROTATION`
 
   <!-- ANIMATED SVG AUDIO PLAYER -->
-  <img src="./assets/audio_player.svg" width="100%" alt="Slowdive Animated Audio Player" />
+  <img src="./assets/audio_player.svg" width="100%" alt="Skyrim Audio Player" />
 
   <br/><br/>
 
-  <p><small style="color: #71717a;"><i>"Underneath the noise, structure remains."</i></small></p>
+  <p><small style="color: #71717a;"><i>"Jeremy Soule — The Streets of Whiterun (Skyrim OST)"</i></small></p>
 
 </div>
