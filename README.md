@@ -2,7 +2,7 @@
 
   <!-- ANIMATED TYPING HEADER -->
   <a href="https://github.com/JonatanRosassss">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=00F0FF&background=09090B00&center=true&vCenter=true&width=750&height=60&lines=SYSTEM_%2F%2F_JONATAN_ROSAS;FOCUS_%2F%2F_BAJO_NIVEL_Y_CONCURRENCIA;UTN_FRGP_Y_UNPILAR;STACK_%7C_C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS" alt="Typing Header" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=00F0FF&background=09090B00&center=true&vCenter=true&width=750&height=60&lines=SYSTEM_%2F%2F_JONATAN_ROSAS;UTN_FRGP_Y_UNPILAR;STACK_%7C_C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS" alt="Typing Header" />
   </a>
 
   <br/><br/>
@@ -19,7 +19,7 @@
 
   <p>
     <img src="https://img.shields.io/badge/FOCUS-BAJO_NIVEL_Y_CONCURRENCIA-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=00F0FF" alt="Focus" />
-    <img src="https://img.shields.io/badge/STUDENT-UTN_FRGP_Y_UNPILAR-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Student" />
+    <!-- <img src="https://img.shields.io/badge/STUDENT-UTN_FRGP_Y_UNPILAR-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Student" /> -->
     <img src="https://img.shields.io/badge/CORE-C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=FFFFFF" alt="Languages" />
   </p>
 
@@ -27,7 +27,7 @@
 
 ---
 
-### `// 01 . ACADEMIC & SYSTEMS`
+### `// ACADEMIC & SYSTEMS`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -62,7 +62,7 @@
 
 <br/>
 
-### `// 02 . LAB & PERSONAL EXPERIMENTS`
+### `// LAB & PERSONAL EXPERIMENTS`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -91,7 +91,7 @@
 
 <br/>
 
-### `// 03 . COURSEWORK & KNOWLEDGE BASE`
+### `// COURSEWORK & KNOWLEDGE BASE`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -118,7 +118,7 @@
 
 ---
 
-### `// TELEMETRIA Y METRICAS DE ACTIVIDAD`
+### `// ACTIVIDAD`
 
 <div align="center">
   <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -146,7 +146,7 @@
 
 <br/>
 
-### `// TECH MATRIX`
+### `// TECHS`
 
 <div align="center">
   <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; padding: 14px; border-radius: 6px;">
@@ -169,7 +169,7 @@
 
 <div align="center">
 
-  ### `// AUDIO SIGNAL Y CURRENT ROTATION`
+  ### `//////////////////////////////////`
 
   <!-- ANIMATED SVG AUDIO PLAYER -->
   <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/audio_player.svg" width="100%" alt="Skyrim Audio Player" />
