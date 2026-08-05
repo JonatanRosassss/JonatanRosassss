@@ -41,8 +41,8 @@
     <text y="15" class="ascii">   /\_/\   </text>
     <text y="30" class="ascii">  ( o.o )  </text>
     <text y="45" class="ascii">   &gt; ^ &lt;   </text>
-    <text y="65" class="ascii"> [LOW-LEVEL]</text>
-    <text y="85" class="ascii">CONCURRENCY</text>
+    <text y="65" class="ascii"> </text>
+    <text y="85" class="ascii"></text>
     <text y="105" class="ascii"> DEV // LAB</text>
     <text y="120" class="ascii">  =========</text>
   </g>
@@ -50,7 +50,6 @@
   <!-- Right System Information -->
   <g transform="translate(180, 95)">
     <text y="15" class="label">USER:<tspan class="value"> Jonatan Rosas (JonatanRosassss)</tspan></text>
-    <text y="35" class="label">FOCUS:<tspan class="value"> Programación de Bajo Nivel y Concurrencia</tspan></text>
     <text y="55" class="label">INTERESTS:<tspan class="value"> Multithreading, Memoria, Algoritmos y Async</tspan></text>
     <text y="75" class="label">STACK:<tspan class="value"> C++ • C# (.NET) • Python • JavaScript • SQL</tspan></text>
     <text y="95" class="label">STATUS:<tspan class="value" fill="#00f0ff"> ● OPERATIONAL</tspan> <tspan class="dim">| UTN FRGP y UNPILAR</tspan></text>
