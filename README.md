@@ -8,12 +8,12 @@
   <br/><br/>
 
   <!-- ABSTRACT Y2K INK BANNER -->
-  <img src="./assets/header_banner.jpg" width="100%" alt="Y2K Noise Ink Banner" style="border-radius: 6px; border: 1px solid #27272a;" />
+  <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/header_banner.jpg" width="100%" alt="Y2K Noise Ink Banner" style="border-radius: 6px; border: 1px solid #27272a;" />
 
   <br/><br/>
 
   <!-- TERMINAL WINDOW SIMULATION -->
-  <img src="./assets/terminal_header.svg" width="100%" alt="Terminal Window Simulation" />
+  <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/terminal_header.svg" width="100%" alt="Terminal Window Simulation" />
 
   <br/><br/>
 
@@ -171,8 +171,8 @@
 
   ### `// AUDIO SIGNAL & CURRENT ROTATION`
 
-  <!-- ANIMATED SVG AUDIO PLAYER -->
-  <img src="./assets/audio_player.svg" width="100%" alt="Skyrim Audio Player" />
+  <!-- ANIMATED SVG AUDIO PLAYER WITH ABSOLUTE RAW GITHUB URL -->
+  <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/audio_player.svg" width="100%" alt="Skyrim Audio Player" />
 
   <br/><br/>
 
