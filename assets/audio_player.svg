@@ -1,51 +1,154 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="120" viewBox="0 0 600 120" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="140" viewBox="0 0 800 140" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090d"/>
+      <stop offset="50%" stop-color="#121218"/>
+      <stop offset="100%" stop-color="#07070a"/>
+    </linearGradient>
+
+    <!-- Wave Gradient -->
+    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Rune Ring Glow -->
+    <radialGradient id="dragon-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
   <style>
-    .bg { fill: #09090b; stroke: #27272a; stroke-width: 1px; rx: 8px; }
-    .title { font-family: 'Fira Code', 'Courier New', monospace; font-weight: 700; font-size: 14px; fill: #ffffff; }
-    .artist { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #00f0ff; }
-    .album { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #71717a; }
-    .time { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #a855f7; }
-    .bar-bg { fill: #18181b; rx: 2px; }
-    .bar-fill { fill: #00f0ff; rx: 2px; }
+    .bg { fill: url(#card-bg); stroke: #27272a; stroke-width: 1px; rx: 10px; }
     
-    .eq-bar { fill: #00f0ff; transform-origin: bottom; animation: pulse 1.4s ease-in-out infinite alternate; }
+    /* Skyrim Dragon Emblem Glow & Spin */
+    .dragon-ring {
+      transform-origin: 65px 70px;
+      animation: spin 20s linear infinite;
+      stroke: #00f0ff;
+      stroke-dasharray: 6 4;
+      opacity: 0.8;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    .dragon-icon {
+      fill: #e4e4e7;
+      filter: drop-shadow(0 0 6px #00f0ff);
+      animation: pulse-dragon 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-dragon {
+      0% { filter: drop-shadow(0 0 2px #00f0ff); opacity: 0.85; }
+      100% { filter: drop-shadow(0 0 10px #a855f7); opacity: 1; }
+    }
+
+    /* Live Audio Wave Flow */
+    .audio-wave {
+      stroke: url(#wave-grad);
+      stroke-width: 2.5px;
+      fill: none;
+      stroke-dasharray: 200;
+      animation: wave-flow 4s linear infinite;
+    }
+    @keyframes wave-flow {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    /* Animated Progress Dot */
+    .progress-dot {
+      animation: progress-move 8s ease-in-out infinite alternate;
+    }
+    @keyframes progress-move {
+      0% { transform: translateX(0px); }
+      100% { transform: translateX(200px); }
+    }
+
+    /* Equalizer Multi-Spectrum Bars */
+    .eq-bar {
+      fill: #00f0ff;
+      transform-origin: bottom;
+      animation: eq-pulse 1.2s ease-in-out infinite alternate;
+    }
+    .eq-bar-purple { fill: #a855f7; }
     .eq-1 { animation-delay: 0.1s; }
-    .eq-2 { animation-delay: 0.5s; }
+    .eq-2 { animation-delay: 0.4s; }
     .eq-3 { animation-delay: 0.2s; }
     .eq-4 { animation-delay: 0.6s; }
     .eq-5 { animation-delay: 0.3s; }
-    
-    @keyframes pulse {
-      0% { transform: scaleY(0.25); }
-      100% { transform: scaleY(1); }
+    .eq-6 { animation-delay: 0.7s; }
+    .eq-7 { animation-delay: 0.15s; }
+    .eq-8 { animation-delay: 0.5s; }
+
+    @keyframes eq-pulse {
+      0% { transform: scaleY(0.2); }
+      100% { transform: scaleY(1.1); }
     }
+
+    /* Typography */
+    .title { font-family: 'Fira Code', 'Courier New', monospace; font-weight: 800; font-size: 15px; fill: #ffffff; letter-spacing: 0.5px; }
+    .artist { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #00f0ff; }
+    .album { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #71717a; }
+    .time { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #a855f7; font-weight: 700; }
   </style>
 
-  <!-- Container Box -->
-  <rect width="598" height="118" x="1" y="1" class="bg" />
+  <!-- Card Background -->
+  <rect width="798" height="138" x="1" y="1" class="bg"/>
 
-  <!-- Album Art Box (Elder Scrolls / Skyrim Dragon Icon Aesthetic) -->
-  <rect x="16" y="16" width="86" height="86" rx="6" fill="#121215" stroke="#27272a" />
-  <circle cx="59" cy="59" r="28" fill="#09090b" stroke="#00f0ff" stroke-width="1.5" />
-  <polygon points="59,38 66,54 80,59 66,64 59,80 52,64 38,59 52,54" fill="#a855f7" />
+  <!-- Dragon Emblem Ambient Glow -->
+  <circle cx="65" cy="70" r="50" fill="url(#dragon-glow)"/>
 
-  <!-- Track Meta -->
-  <text x="118" y="40" class="title">The Streets of Whiterun</text>
-  <text x="118" y="58" class="artist">Jeremy Soule — The Elder Scrolls V: Skyrim OST</text>
-  <text x="118" y="74" class="album">Status: Ambient Focus Soundtrack</text>
+  <!-- Rotating Skyrim Rune Outer Ring -->
+  <circle cx="65" cy="70" r="42" fill="none" stroke-width="1.5" class="dragon-ring"/>
+  <circle cx="65" cy="70" r="46" fill="none" stroke="#27272a" stroke-width="0.5"/>
 
-  <!-- Progress Bar -->
-  <rect x="118" y="86" width="380" height="4" class="bar-bg" />
-  <rect x="118" y="86" width="210" height="4" class="bar-fill" />
-  <circle cx="328" cy="88" r="4" fill="#ffffff" />
-  <text x="510" y="90" class="time">2:18 / 4:05</text>
+  <!-- Skyrim Imperial Dragon Emblem Geometry -->
+  <g class="dragon-icon" transform="translate(65, 70) scale(0.85)">
+    <!-- Dragon Head & Wings Diamond Shape -->
+    <path d="M0 -32 L12 -12 L28 -2 L12 8 L0 32 L-12 8 L-28 -2 L-12 -12 Z" />
+    <polygon points="0,-24 6,-10 0,20 -6,-10" fill="#09090b" />
+    <circle cx="0" cy="-2" r="3" fill="#00f0ff" />
+  </g>
 
-  <!-- Animated Equalizer Bars -->
-  <g transform="translate(535, 35)">
-    <rect class="eq-bar eq-1" x="0" y="0" width="4" height="30" rx="2" />
-    <rect class="eq-bar eq-2" x="8" y="0" width="4" height="30" rx="2" />
-    <rect class="eq-bar eq-3" x="16" y="0" width="4" height="30" rx="2" />
-    <rect class="eq-bar eq-4" x="24" y="0" width="4" height="30" rx="2" />
-    <rect class="eq-bar eq-5" x="32" y="0" width="4" height="30" rx="2" />
+  <!-- Track Info -->
+  <text x="135" y="42" class="title">The Streets of Whiterun</text>
+  <text x="135" y="62" class="artist">Jeremy Soule — The Elder Scrolls V: Skyrim OST</text>
+  <text x="135" y="78" class="album">▸ Status: Ambient Focus Soundtrack (Skyrim Atmosphere)</text>
+
+  <!-- Animated Ambient Waveform Line -->
+  <path d="M135 92 Q 185 80, 235 92 T 335 92 T 435 92 T 535 92" class="audio-wave"/>
+
+  <!-- Progress Bar Line -->
+  <rect x="135" y="104" width="460" height="3" fill="#181824" rx="1.5"/>
+  <rect x="135" y="104" width="240" height="3" fill="#00f0ff" rx="1.5"/>
+  
+  <!-- Glowing Animated Progress Head -->
+  <g transform="translate(135, 105.5)">
+    <circle cx="240" cy="0" r="5" fill="#ffffff" stroke="#00f0ff" stroke-width="2" class="progress-dot"/>
+  </g>
+
+  <text x="610" y="108" class="time">2:18 / 4:05</text>
+
+  <!-- Multi-Spectrum Animated Equalizer (Right Side) -->
+  <g transform="translate(680, 40)">
+    <!-- Equalizer Container Box -->
+    <rect width="95" height="60" x="-10" y="-10" fill="#121218" stroke="#27272a" rx="6"/>
+    
+    <g transform="translate(0, 40)">
+      <rect class="eq-bar eq-1" x="0" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-bar-purple eq-2" x="8" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-3" x="16" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-bar-purple eq-4" x="24" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-5" x="32" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-bar-purple eq-6" x="40" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-7" x="48" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-bar-purple eq-8" x="56" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-1" x="64" y="-30" width="4" height="30" rx="2"/>
+      <rect class="eq-bar eq-bar-purple eq-3" x="72" y="-30" width="4" height="30" rx="2"/>
+    </g>
   </g>
 </svg>

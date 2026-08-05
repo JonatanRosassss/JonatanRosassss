@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#121218"/>
+    </linearGradient>
+
+    <!-- Glowing Lines Gradient -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Aurora Radial Glow -->
+    <radialGradient id="aurora" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bg-grad); stroke: #27272a; stroke-width: 1px; rx: 8px; }
+    .grid { stroke: #181824; stroke-width: 0.5px; opacity: 0.6; }
+    
+    /* Animations */
+    .scan-line {
+      animation: scan 4s linear infinite;
+    }
+    @keyframes scan {
+      0% { transform: translateY(-220px); opacity: 0; }
+      50% { opacity: 0.8; }
+      100% { transform: translateY(220px); opacity: 0; }
+    }
+
+    .pulse-glow {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.3; filter: drop-shadow(0 0 2px #00f0ff); }
+      100% { opacity: 0.9; filter: drop-shadow(0 0 12px #00f0ff); }
+    }
+
+    .star {
+      animation: float 2s ease-in-out infinite alternate;
+    }
+    .star-1 { animation-delay: 0.2s; }
+    .star-2 { animation-delay: 0.7s; }
+    .star-3 { animation-delay: 1.2s; }
+    @keyframes float {
+      0% { opacity: 0.2; transform: translateY(0px) scale(0.8); }
+      100% { opacity: 1; transform: translateY(-4px) scale(1.2); }
+    }
+
+    .title-text {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 800;
+      font-size: 26px;
+      fill: #ffffff;
+      letter-spacing: 4px;
+    }
+    .sub-text {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 13px;
+      fill: #00f0ff;
+      letter-spacing: 6px;
+    }
+    .bracket { fill: #a855f7; }
+  </style>
+
+  <!-- Container -->
+  <rect width="898" height="218" x="1" y="1" class="bg"/>
+
+  <!-- Background Grid -->
+  <path d="M0 30H900 M0 60H900 M0 90H900 M0 120H900 M0 150H900 M0 180H900" class="grid"/>
+  <path d="M100 0V220 M200 0V220 M300 0V220 M400 0V220 M500 0V220 M600 0V220 M700 0V220 M800 0V220" class="grid"/>
+
+  <!-- Aurora Glow Sphere -->
+  <circle cx="450" cy="110" r="200" fill="url(#aurora)"/>
+
+  <!-- Animated Scanning Laser Line -->
+  <line x1="0" y1="110" x2="900" y2="110" stroke="url(#cyan-glow)" stroke-width="2" class="scan-line"/>
+
+  <!-- Floating Particles / Stars -->
+  <circle cx="120" cy="50" r="2" fill="#00f0ff" class="star star-1"/>
+  <circle cx="780" cy="160" r="2.5" fill="#a855f7" class="star star-2"/>
+  <circle cx="240" cy="170" r="1.5" fill="#ffffff" class="star star-3"/>
+  <circle cx="680" cy="40" r="2" fill="#00f0ff" class="star star-1"/>
+
+  <!-- Geometric Y2K Corner Accents -->
+  <path d="M20 20H50 M20 20V50" stroke="#00f0ff" stroke-width="2" class="pulse-glow"/>
+  <path d="M880 20H850 M880 20V50" stroke="#00f0ff" stroke-width="2" class="pulse-glow"/>
+  <path d="M20 200H50 M20 200V170" stroke="#00f0ff" stroke-width="2" class="pulse-glow"/>
+  <path d="M880 200H850 M880 200V170" stroke="#00f0ff" stroke-width="2" class="pulse-glow"/>
+
+  <!-- Center Typography -->
+  <g transform="translate(450, 105)" text-anchor="middle">
+    <text y="0" class="title-text">
+      <tspan class="bracket">[</tspan> JONATAN ROSAS <tspan class="bracket">]</tspan>
+    </text>
+    <text y="36" class="sub-text">SOFTWARE // SYSTEMS // ARCHITECTURE</text>
+  </g>
+
+  <!-- Bottom Terminal Accent -->
+  <rect x="350" y="175" width="200" height="2" fill="url(#cyan-glow)" class="pulse-glow"/>
+</svg>

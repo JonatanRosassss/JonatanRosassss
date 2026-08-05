@@ -7,8 +7,8 @@
 
   <br/><br/>
 
-  <!-- ABSTRACT Y2K INK BANNER -->
-  <img src="./assets/header_banner.jpg" width="100%" alt="Y2K Noise Ink Banner" style="border-radius: 6px; border: 1px solid #27272a;" />
+  <!-- ANIMATED Y2K NOISE GLOW BANNER -->
+  <img src="./assets/header_banner.svg" width="100%" alt="Animated Header Banner" />
 
   <br/><br/>
 
