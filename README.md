@@ -18,16 +18,16 @@
   <br/><br/>
 
   <p>
-    <img src="https://img.shields.io/badge/STUDENT-UTN%20FRGP%20%26%20UNPILAR-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=00F0FF" alt="Student" />
-    <img src="https://img.shields.io/badge/ROLE-SOFTWARE%20DEVELOPER-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Role" />
-    <img src="https://img.shields.io/badge/CORE-C%2B%2B%20%7C%20C%23%20%7C%20PYTHON%20%7C%20JS-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=FFFFFF" alt="Languages" />
+    <img src="https://img.shields.io/badge/STUDENT-UTN_FRGP_Y_UNPILAR-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=00F0FF" alt="Student" />
+    <img src="https://img.shields.io/badge/ROLE-SOFTWARE_DEVELOPER-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=A855F7" alt="Role" />
+    <img src="https://img.shields.io/badge/CORE-C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS-09090B?style=for-the-badge&logoWidth=0&labelColor=000000&color=FFFFFF" alt="Languages" />
   </p>
 
 </div>
 
 ---
 
-### `// 01 . PROYECTOS UNIVERSIDAD & SISTEMAS (UTN FRGP & UNPILAR)`
+### `// 01 . PROYECTOS UNIVERSIDAD Y SISTEMAS (UTN FRGP Y UNPILAR)`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -62,7 +62,7 @@
 
 <br/>
 
-### `// 02 . PRACTICAS PERSONALES & EXPERIMENTOS`
+### `// 02 . PRACTICAS PERSONALES Y EXPERIMENTOS`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -91,7 +91,7 @@
 
 <br/>
 
-### `// 03 . CONTENIDO & MATERIAS DE UNIVERSIDAD (UTN FRGP & UNPILAR)`
+### `// 03 . CONTENIDO Y MATERIAS DE UNIVERSIDAD (UTN FRGP Y UNPILAR)`
 
 <table width="100%" bgcolor="#09090b" style="border: 1px solid #27272a; border-collapse: separate; border-spacing: 8px;">
   <tr>
@@ -118,7 +118,7 @@
 
 ---
 
-### `// TELEMETRIA & METRICAS DE ACTIVIDAD`
+### `// TELEMETRIA Y METRICAS DE ACTIVIDAD`
 
 <div align="center">
   <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -169,9 +169,9 @@
 
 <div align="center">
 
-  ### `// AUDIO SIGNAL & CURRENT ROTATION`
+  ### `// AUDIO SIGNAL Y CURRENT ROTATION`
 
-  <!-- ANIMATED SVG AUDIO PLAYER WITH ABSOLUTE RAW GITHUB URL -->
+  <!-- ANIMATED SVG AUDIO PLAYER -->
   <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/audio_player.svg" width="100%" alt="Skyrim Audio Player" />
 
   <br/><br/>

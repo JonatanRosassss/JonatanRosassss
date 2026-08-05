@@ -50,8 +50,8 @@
   <!-- Right System Information -->
   <g transform="translate(180, 95)">
     <text y="15" class="label">USER:<tspan class="value"> Jonatan Rosas (JonatanRosassss)</tspan></text>
-    <text y="35" class="label">HOST:<tspan class="value"> UTN FRGP &amp; UNPILAR — Desarrollo de Software</tspan></text>
-    <text y="55" class="label">ROLE:<tspan class="value"> Estudiante de Programación &amp; Software Dev</tspan></text>
+    <text y="35" class="label">HOST:<tspan class="value"> UTN FRGP y UNPILAR — Desarrollo de Software</tspan></text>
+    <text y="55" class="label">ROLE:<tspan class="value"> Estudiante de Programacion y Software Dev</tspan></text>
     <text y="75" class="label">STACK:<tspan class="value"> C++ • C# (.NET) • Python • JavaScript • SQL • HTML</tspan></text>
     <text y="95" class="label">STATUS:<tspan class="value" fill="#00f0ff"> ● OPERATIONAL</tspan> <tspan class="dim">| En aprendizaje constante</tspan></text>
   </g>
