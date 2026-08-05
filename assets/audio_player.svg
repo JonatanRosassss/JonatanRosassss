@@ -1,154 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="140" viewBox="0 0 800 140" fill="none">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#09090d"/>
-      <stop offset="50%" stop-color="#121218"/>
-      <stop offset="100%" stop-color="#07070a"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="130" viewBox="0 0 800 130" fill="none">
+  <!-- Container Background -->
+  <rect width="798" height="128" x="1" y="1" fill="#09090b" stroke="#27272a" stroke-width="1" rx="8"/>
 
-    <!-- Wave Gradient -->
-    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.2"/>
-      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8"/>
-    </linearGradient>
-
-    <!-- Rune Ring Glow -->
-    <radialGradient id="dragon-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <style>
-    .bg { fill: url(#card-bg); stroke: #27272a; stroke-width: 1px; rx: 10px; }
-    
-    /* Skyrim Dragon Emblem Glow & Spin */
-    .dragon-ring {
-      transform-origin: 65px 70px;
-      animation: spin 20s linear infinite;
-      stroke: #00f0ff;
-      stroke-dasharray: 6 4;
-      opacity: 0.8;
-    }
-    @keyframes spin {
-      100% { transform: rotate(360deg); }
-    }
-
-    .dragon-icon {
-      fill: #e4e4e7;
-      filter: drop-shadow(0 0 6px #00f0ff);
-      animation: pulse-dragon 3s ease-in-out infinite alternate;
-    }
-    @keyframes pulse-dragon {
-      0% { filter: drop-shadow(0 0 2px #00f0ff); opacity: 0.85; }
-      100% { filter: drop-shadow(0 0 10px #a855f7); opacity: 1; }
-    }
-
-    /* Live Audio Wave Flow */
-    .audio-wave {
-      stroke: url(#wave-grad);
-      stroke-width: 2.5px;
-      fill: none;
-      stroke-dasharray: 200;
-      animation: wave-flow 4s linear infinite;
-    }
-    @keyframes wave-flow {
-      0% { stroke-dashoffset: 400; }
-      100% { stroke-dashoffset: 0; }
-    }
-
-    /* Animated Progress Dot */
-    .progress-dot {
-      animation: progress-move 8s ease-in-out infinite alternate;
-    }
-    @keyframes progress-move {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(200px); }
-    }
-
-    /* Equalizer Multi-Spectrum Bars */
-    .eq-bar {
-      fill: #00f0ff;
-      transform-origin: bottom;
-      animation: eq-pulse 1.2s ease-in-out infinite alternate;
-    }
-    .eq-bar-purple { fill: #a855f7; }
-    .eq-1 { animation-delay: 0.1s; }
-    .eq-2 { animation-delay: 0.4s; }
-    .eq-3 { animation-delay: 0.2s; }
-    .eq-4 { animation-delay: 0.6s; }
-    .eq-5 { animation-delay: 0.3s; }
-    .eq-6 { animation-delay: 0.7s; }
-    .eq-7 { animation-delay: 0.15s; }
-    .eq-8 { animation-delay: 0.5s; }
-
-    @keyframes eq-pulse {
-      0% { transform: scaleY(0.2); }
-      100% { transform: scaleY(1.1); }
-    }
-
-    /* Typography */
-    .title { font-family: 'Fira Code', 'Courier New', monospace; font-weight: 800; font-size: 15px; fill: #ffffff; letter-spacing: 0.5px; }
-    .artist { font-family: 'Fira Code', 'Courier New', monospace; font-size: 12px; fill: #00f0ff; }
-    .album { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #71717a; }
-    .time { font-family: 'Fira Code', 'Courier New', monospace; font-size: 10px; fill: #a855f7; font-weight: 700; }
-  </style>
-
-  <!-- Card Background -->
-  <rect width="798" height="138" x="1" y="1" class="bg"/>
-
-  <!-- Dragon Emblem Ambient Glow -->
-  <circle cx="65" cy="70" r="50" fill="url(#dragon-glow)"/>
-
-  <!-- Rotating Skyrim Rune Outer Ring -->
-  <circle cx="65" cy="70" r="42" fill="none" stroke-width="1.5" class="dragon-ring"/>
-  <circle cx="65" cy="70" r="46" fill="none" stroke="#27272a" stroke-width="0.5"/>
-
-  <!-- Skyrim Imperial Dragon Emblem Geometry -->
-  <g class="dragon-icon" transform="translate(65, 70) scale(0.85)">
-    <!-- Dragon Head & Wings Diamond Shape -->
-    <path d="M0 -32 L12 -12 L28 -2 L12 8 L0 32 L-12 8 L-28 -2 L-12 -12 Z" />
-    <polygon points="0,-24 6,-10 0,20 -6,-10" fill="#09090b" />
-    <circle cx="0" cy="-2" r="3" fill="#00f0ff" />
-  </g>
-
-  <!-- Track Info -->
-  <text x="135" y="42" class="title">The Streets of Whiterun</text>
-  <text x="135" y="62" class="artist">Jeremy Soule — The Elder Scrolls V: Skyrim OST</text>
-  <text x="135" y="78" class="album">▸ Status: Ambient Focus Soundtrack (Skyrim Atmosphere)</text>
-
-  <!-- Animated Ambient Waveform Line -->
-  <path d="M135 92 Q 185 80, 235 92 T 335 92 T 435 92 T 535 92" class="audio-wave"/>
-
-  <!-- Progress Bar Line -->
-  <rect x="135" y="104" width="460" height="3" fill="#181824" rx="1.5"/>
-  <rect x="135" y="104" width="240" height="3" fill="#00f0ff" rx="1.5"/>
+  <!-- Left Album Icon Container -->
+  <rect x="16" y="16" width="96" height="96" rx="6" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  <circle cx="64" cy="64" r="32" fill="#09090b" stroke="#00f0ff" stroke-width="1.5"/>
   
-  <!-- Glowing Animated Progress Head -->
-  <g transform="translate(135, 105.5)">
-    <circle cx="240" cy="0" r="5" fill="#ffffff" stroke="#00f0ff" stroke-width="2" class="progress-dot"/>
+  <!-- Rotating Skyrim Star / Diamond Seal using SVG animateTransform -->
+  <g transform="translate(64, 64)">
+    <g>
+      <polygon points="0,-22 6,-8 22,0 6,8 0,22 -6,8 -22,0 -6,-8" fill="#a855f7"/>
+      <circle cx="0" cy="0" r="4" fill="#00f0ff"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </g>
   </g>
 
-  <text x="610" y="108" class="time">2:18 / 4:05</text>
+  <!-- Track Information -->
+  <text x="130" y="40" fill="#ffffff" font-family="Courier New, monospace" font-size="15" font-weight="bold">The Streets of Whiterun</text>
+  <text x="130" y="60" fill="#00f0ff" font-family="Courier New, monospace" font-size="12">Jeremy Soule — The Elder Scrolls V: Skyrim OST</text>
+  <text x="130" y="78" fill="#71717a" font-family="Courier New, monospace" font-size="10">▸ Ambient Focus Soundtrack (Skyrim Atmosphere)</text>
 
-  <!-- Multi-Spectrum Animated Equalizer (Right Side) -->
-  <g transform="translate(680, 40)">
-    <!-- Equalizer Container Box -->
-    <rect width="95" height="60" x="-10" y="-10" fill="#121218" stroke="#27272a" rx="6"/>
+  <!-- Timeline Bar -->
+  <rect x="130" y="96" width="450" height="4" fill="#181824" rx="2"/>
+  <rect x="130" y="96" width="250" height="4" fill="#00f0ff" rx="2"/>
+  <circle cx="380" cy="98" r="5" fill="#ffffff" stroke="#00f0ff" stroke-width="2"/>
+  <text x="590" y="100" fill="#a855f7" font-family="Courier New, monospace" font-size="10" font-weight="bold">2:18 / 4:05</text>
+
+  <!-- Animated Native SVG Equalizer Bars -->
+  <g transform="translate(660, 30)">
+    <rect width="110" height="70" x="-10" y="-10" fill="#121215" stroke="#27272a" stroke-width="1" rx="6"/>
     
-    <g transform="translate(0, 40)">
-      <rect class="eq-bar eq-1" x="0" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-bar-purple eq-2" x="8" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-3" x="16" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-bar-purple eq-4" x="24" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-5" x="32" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-bar-purple eq-6" x="40" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-7" x="48" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-bar-purple eq-8" x="56" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-1" x="64" y="-30" width="4" height="30" rx="2"/>
-      <rect class="eq-bar eq-bar-purple eq-3" x="72" y="-30" width="4" height="30" rx="2"/>
-    </g>
+    <!-- Bar 1 -->
+    <rect x="0" y="15" width="5" height="30" fill="#00f0ff" rx="2">
+      <animate attributeName="height" values="10;35;15;40;10" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="35;10;30;5;35" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 2 -->
+    <rect x="9" y="20" width="5" height="25" fill="#a855f7" rx="2">
+      <animate attributeName="height" values="25;8;38;12;25" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="20;37;7;33;20" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 3 -->
+    <rect x="18" y="10" width="5" height="35" fill="#00f0ff" rx="2">
+      <animate attributeName="height" values="35;15;42;20;35" dur="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="10;30;3;25;10" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 4 -->
+    <rect x="27" y="25" width="5" height="20" fill="#a855f7" rx="2">
+      <animate attributeName="height" values="15;36;10;40;15" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="30;9;35;5;30" dur="1.4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 5 -->
+    <rect x="36" y="12" width="5" height="33" fill="#00f0ff" rx="2">
+      <animate attributeName="height" values="33;18;40;12;33" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="12;27;5;33;12" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 6 -->
+    <rect x="45" y="18" width="5" height="27" fill="#a855f7" rx="2">
+      <animate attributeName="height" values="20;42;15;30;20" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="25;3;30;15;25" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 7 -->
+    <rect x="54" y="8" width="5" height="37" fill="#00f0ff" rx="2">
+      <animate attributeName="height" values="37;12;25;40;37" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="8;33;20;5;8" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 8 -->
+    <rect x="63" y="22" width="5" height="23" fill="#a855f7" rx="2">
+      <animate attributeName="height" values="23;38;10;32;23" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="22;7;35;13;22" dur="1.4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 9 -->
+    <rect x="72" y="15" width="5" height="30" fill="#00f0ff" rx="2">
+      <animate attributeName="height" values="10;35;20;42;10" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="35;10;25;3;35" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Bar 10 -->
+    <rect x="81" y="28" width="5" height="17" fill="#a855f7" rx="2">
+      <animate attributeName="height" values="17;32;8;28;17" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="28;13;37;17;28" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
   </g>
 </svg>
