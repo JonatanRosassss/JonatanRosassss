@@ -1,4 +1,4 @@
-<div align="center">
+
 
   <div align="center">
 
@@ -16,7 +16,7 @@
 
 </div>
 
-
+<div align="center">
   <!-- TERMINAL WINDOW SIMULATION -->
   <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/terminal_header.svg" width="100%" alt="Terminal Window Simulation" />
 
