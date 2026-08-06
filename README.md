@@ -7,7 +7,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=00F0FF&background=09090B00&center=true&vCenter=true&width=750&height=60&lines=SYSTEM_%2F%2F_JONATAN_ROSAS;UTN_FRGP_Y_UNPILAR;STACK_%7C_C%2B%2B_%7C_C%23_%7C_PYTHON_%7C_JS" alt="Typing Header" />
   </a>
 
-  <br/><br/>
+  
 
   <!-- ABSTRACT Y2K INK BANNER -->
   <img src="https://raw.githubusercontent.com/JonatanRosassss/JonatanRosassss/main/assets/header_banner.jpg" width="100%" alt="Y2K Noise Ink Banner" />
